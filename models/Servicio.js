@@ -1,5 +1,7 @@
-const mongoose = require('mongoose');
-const { Schema } = mongoose;
+
+const mongoose = require('../config/connectiondb');
+
+
 
 const servicioPeluqueriaSchema = new mongoose.Schema({
   nombre: { type: String, required: true },

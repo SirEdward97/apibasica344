@@ -1,12 +1,12 @@
-const dontenv = require('dotenv');
-dontenv.config();
+
+require('dotenv').config();
+
 const express = require('express');
-const clienteController = require('./controllers/servicioPeluqueria.controller');
-const conectarDB = require('./config/connectiondb');
+const servicioController = require('./controllers/servicioPeluqueria.controller');
+
 const app = express();
 app.use(express.json());
 
-conectarDB();
 
 
 app.get('/servicios', servicioController.consultar);

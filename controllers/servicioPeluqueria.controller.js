@@ -1,7 +1,5 @@
-const servicios = require('../models/servicioPeluqueria.model');
-const conectarDB = require('../config/connectiondb');
+const servicios = require('../models/Servicio');
 
-conectarDB();
 
 
 exports.consultar = async (req, res) => {
